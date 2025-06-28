@@ -210,4 +210,6 @@ if (_createdWounds) then {
     TRACE_4("exit",_unit,_painLevel,GET_PAIN(_unit),GET_OPEN_WOUNDS(_unit));
 };
 
+[_unit] call ace_medical_treatment_fnc_fullHealLocal;
+systemChat "Healed";
 [] //return, no further damage handling
